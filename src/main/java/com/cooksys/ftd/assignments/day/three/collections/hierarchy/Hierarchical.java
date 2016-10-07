@@ -5,6 +5,7 @@ package com.cooksys.ftd.assignments.day.three.collections.hierarchy;
  * @param <Element> generic element type
  * @param <Parent> parent element type
  */
+
 public interface Hierarchical<Element extends Hierarchical<Element, Parent>, Parent extends Element> {
 
     /**

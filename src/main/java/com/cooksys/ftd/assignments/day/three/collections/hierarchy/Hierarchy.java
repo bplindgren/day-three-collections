@@ -4,10 +4,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import com.cooksys.ftd.assignments.day.three.collections.model.Capitalist;
+import com.cooksys.ftd.assignments.day.three.collections.model.FatCat;
+
 /**
- * @param <Element> generic element type
+ * @param <Element> generic element type 
  * @param <Parent> parent element type
  */
+
+// pub interface Hierarchy<Capitalist extends Hierarchical<Capitalist, FatCat>, FatCat extends Capitalist>
 public interface Hierarchy<Element extends Hierarchical<Element, Parent>, Parent extends Element> {
 
     /**
