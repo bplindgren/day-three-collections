@@ -51,12 +51,10 @@ public class MegaCorp implements Hierarchy<Capitalist, FatCat> {
 			// Get the parent
 			FatCat parent = capitalist.getParent();
 
-			// If the company already has the parent, get the parent's children
-			// and add the capitalist,
-			// else, add the parent to the company
+			// If the company already has the parent, add the capitalist to the parent's children
 			if (has(parent)) {
 				getChildren(parent).add(capitalist);
-			} else {
+			} else { // else, add the parent to the company
 				add(parent);
 			}
 
